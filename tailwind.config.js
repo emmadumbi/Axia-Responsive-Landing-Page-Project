@@ -31,6 +31,18 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      fontSize: {
+        "6xl": "clamp(2rem, 1.5rem + 2.5vw, 3.75rem)",
+        "4xl": "clamp(1.5rem, 1.286rem + 1.071vw, 2.25rem)",
+        "3xl": "clamp(1.125rem, 0.946rem + 0.893vw, 1.75rem)",
+        sm: "clamp(0.75rem, 0.679rem + 0.357vw, 1rem)",
+      },
+      screens: {
+        xl: { max: "71.875em" }, //1150px
+        lg: { max: "56.25em" }, //900px
+        md: { max: "51.875em" }, //830px
+        sm: { max: "639px" },
+      },
     },
   },
   plugins: [],

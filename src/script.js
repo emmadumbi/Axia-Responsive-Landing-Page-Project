@@ -1,6 +1,10 @@
 const menuBtn = document.getElementById("menu-btn");
-const menu = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
+const closeIcon = document.getElementById("close-icon");
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("hidden");
+  menuIcon.classList.toggle("hidden");
+  closeIcon.classList.toggle("hidden");
 });

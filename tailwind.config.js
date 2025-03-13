@@ -41,7 +41,7 @@ module.exports = {
         xl: { max: "71.875em" }, //1150px
         lg: { max: "56.25em" }, //900px
         md: { max: "51.875em" }, //830px
-        sm: { max: "639px" },
+        sm: { max: "43.75em" }, //700px
       },
     },
   },

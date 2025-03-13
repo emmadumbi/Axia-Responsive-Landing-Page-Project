@@ -88,3 +88,5 @@ Since adopting this platform, we've streamlined our payment processes and improv
 — Lisa K., CFO, PayFlex
 
 📌 Read more success stories →
+
+lg:grid lg:grid-cols-2 lg:w-7/12

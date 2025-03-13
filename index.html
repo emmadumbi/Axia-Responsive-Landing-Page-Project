@@ -163,9 +163,11 @@
             Smart Savings & Job Matching
           </h2>
 
-          <article class="grid grid-cols-3 gap-28 xl:gap-16 mt-20 lg:gap-6">
+          <article
+            class="grid grid-cols-3 gap-28 xl:gap-16 mt-20 lg:gap-6 md:grid-cols-2 sm:flex sm:flex-col"
+          >
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
             >
               <figure>
                 <img src="../icons/member-Icon.svg" alt="member-Icon" />
@@ -180,7 +182,7 @@
             </article>
 
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
             >
               <figure>
                 <img src="../icons/national-Icon.svg" alt="national-Icon" />
@@ -193,7 +195,7 @@
             </article>
 
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
             >
               <figure>
                 <img src="../icons/club-Icon.svg" alt="" />
@@ -233,6 +235,7 @@
                 💲 Investing vs. Saving – What’s Best for You?
               </p>
             </article>
+
             <button
               class="py-[0.625rem] px-8 rounded mt-4 bg-primary-brand text-neutral-White font-medium"
             >
@@ -247,21 +250,23 @@
           <article
             class="w-5/12 flex flex-col justify-center md:items-center md:w-full"
           >
-            <h3 class="font-semibold text-4xl mb-3">
+            <h3 class="font-semibold text-4xl mb-3 md:text-center">
               Helping Businesses Scale with
               <span class="text-action-Error leading-10 md:block md:text-center"
                 >Financial Technology</span
               >
             </h3>
 
-            <p class="text-neutral-Black leading-6">
+            <p class="text-neutral-Black leading-6 md:text-center">
               Empowering businesses with seamless payment solutions and
               financial innovation.
             </p>
           </article>
 
-          <article class="grid grid-cols-2 w-6/12 gap-10 xl:gap-5 md:w-full">
-            <article class="flex gap-5 md:justify-self-center">
+          <article
+            class="grid grid-cols-2 w-6/12 gap-10 xl:gap-5 md:w-full md:mt-10 sm:grid-cols-1"
+          >
+            <article class="flex gap-5 md:justify-center">
               <img
                 class="w-3/12 md:w-auto"
                 src="../icons/member2-Icon.svg"
@@ -275,7 +280,7 @@
               </p>
             </article>
 
-            <article class="flex gap-5 md:justify-self-center">
+            <article class="flex gap-5 md:justify-center">
               <img
                 class="w-3/12 md:w-auto"
                 src="../icons/event-Icon.svg"
@@ -289,7 +294,7 @@
               </p>
             </article>
 
-            <article class="flex gap-5 md:justify-self-center">
+            <article class="flex gap-5 md:justify-center">
               <img
                 class="w-3/12 md:w-auto"
                 src="../icons/event-Icon.svg"
@@ -305,7 +310,7 @@
               </p>
             </article>
 
-            <article class="flex gap-5 md:justify-self-center">
+            <article class="flex gap-5 md:justify-center">
               <img
                 class="w-3/12 md:w-auto"
                 src="../icons/wallet-Icon.svg"
@@ -325,12 +330,14 @@
       </section>
 
       <section>
-        <article class="mx-auto w-11/12 flex justify-between py-32 sm:block">
-          <figure class="w-5/12">
+        <article
+          class="mx-auto w-11/12 flex justify-between py-32 md:flex-col md:text-center"
+        >
+          <figure class="w-5/12 md:w-full md:flex md:justify-center">
             <img src="../images/main-imgs/mobile_pana.jpg" alt="" />
           </figure>
 
-          <article class="w-6/12 pt-9">
+          <article class="w-6/12 pt-9 md:w-full">
             <h3
               class="font-semibold text-4xl leading-[2.75rem] mb-5 text-neutral-D_Grey"
             >
@@ -351,12 +358,12 @@
       </section>
 
       <section class="bg-neutral-Silver">
-        <article class="mx-auto w-11/12 flex gap-7 py-8">
-          <figure class="w-4/12">
+        <article class="mx-auto w-11/12 flex gap-7 py-8 md:block">
+          <figure class="w-4/12 md:w-full md:flex md:justify-center">
             <img src="../images/main-imgs/tesla_img.png" alt="" />
           </figure>
 
-          <article class="w-9/12">
+          <article class="w-9/12 md:w-full md:text-center">
             <p class="font-medium leading-6 text-neutral-Grey mb-4">
               Since adopting this platform, we've streamlined our payment
               processes and improved transaction security. The integration was
@@ -367,14 +374,42 @@
             <p class="text-neutral-L_Grey">
               Chief Financial Officer, British Dragon Boat Racing Association
             </p>
-            <article class="flex gap-10 mt-4 xl:gap-4 sm:block">
-              <img src="../icons/tesla_setion_icons/Logo (1).svg" alt="" />
-              <img src="../icons/tesla_setion_icons/Logo (2).svg" alt="" />
-              <img src="../icons/tesla_setion_icons/Logo (3).svg" alt="" />
-              <img src="../icons/tesla_setion_icons/Logo (4).svg" alt="" />
-              <img src="../icons/tesla_setion_icons/Logo (5).svg" alt="" />
-              <img src="../icons/tesla_setion_icons/Logo(6).svg" alt="" />
-              <a href="" class="flex items-center text-sm text-primary-brand"
+            <article
+              class="flex gap-10 mt-4 xl:gap-4 md:justify-between md:gap-0 sm:grid sm:grid-cols-2"
+            >
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo (1).svg"
+                alt=""
+              />
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo (2).svg"
+                alt=""
+              />
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo (3).svg"
+                alt=""
+              />
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo (4).svg"
+                alt=""
+              />
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo (5).svg"
+                alt=""
+              />
+              <img
+                class="sm:justify-self-center"
+                src="../icons/tesla_setion_icons/Logo(6).svg"
+                alt=""
+              />
+              <a
+                href=""
+                class="flex items-center text-sm text-primary-brand sm:justify-self-center sm:col-start-1 sm:col-end-3"
                 >Meet all customer <img src="../icons/Arrow_Right.svg" alt=""
               /></a>
             </article>
@@ -393,11 +428,12 @@
             Real stories from customers who transformed their financial
             operations with our platform.
           </p>
-          <article class="grid grid-cols-3 gap-10 mt-6">
-            <article class="relative flex justify-center">
+
+          <article class="grid grid-cols-3 gap-10 mt-6 md:grid-cols-2 sm:block">
+            <article class="mx-auto w-11/12">
               <img class="" src="../images/main-imgs/image 18.png" alt="" />
               <article
-                class="absolute w-9/12 top-44 flex flex-col items-center text-center gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12 lg:top-36"
+                class="w-9/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12"
               >
                 <p class="leading-5 text-neutral-Grey mb-3">
                   Managing our business finances used to be a hassle. With this
@@ -410,10 +446,10 @@
               </article>
             </article>
 
-            <article class="relative flex justify-center">
+            <article class="mx-auto w-11/12">
               <img class="" src="../images/main-imgs/image 19.png" alt="" />
               <article
-                class="absolute w-9/12 top-44 flex flex-col items-center text-center gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12 lg:top-36"
+                class="w-9/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12"
               >
                 <p class="leading-5 text-neutral-Grey mb-3">
                   The security and ease of payments have improved our customer
@@ -425,10 +461,10 @@
                 >
               </article>
             </article>
-            <article class="relative flex justify-center">
+            <article class="mx-auto w-11/12">
               <img class="" src="../images/main-imgs/image 20.png" alt="" />
               <article
-                class="absolute w-9/12 top-44 flex flex-col items-center text-center gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12 lg:top-36"
+                class="w-9/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto xl:w-11/12"
               >
                 <p class="leading-5 text-neutral-Grey mb-3">
                   This solution helped us scale without worrying about
@@ -446,10 +482,10 @@
     </main>
     <footer>
       <section class="bg-neutral-Silver">
-        <article
-          class="mt-36 py-24 mx-auto w-11/12 flex flex-col items-center sm:block"
-        >
-          <h6 class="font-semibold text-4xl leading-[4.75rem] text-center">
+        <article class="mt-36 py-24 mx-auto w-11/12 flex flex-col items-center">
+          <h6
+            class="font-semibold text-4xl leading-[4.75rem] text-center sm:leading-10"
+          >
             Ready to Take Control of Your Money?
           </h6>
           <button
@@ -461,7 +497,7 @@
       </section>
 
       <section class="bg-neutral-Black">
-        <article class="mx-auto w-11/12 py-16 flex justify-between">
+        <article class="mx-auto w-11/12 py-16 flex justify-between sm:block">
           <article class="space-y-8">
             <figure>
               <img src="../images/main-imgs/Logo.svg" alt="" />
@@ -490,9 +526,7 @@
             </article>
           </article>
 
-          <article
-            class="flex gap-20 xl:gap-12 lg:grid lg:grid-cols-2 lg:w-7/12"
-          >
+          <article class="flex gap-20 xl:gap-12 sm:block sm:space-y-6 sm:mt-10">
             <article class="">
               <p class="font-semibold text-neutral-White text-xl">Company</p>
               <ul class="text-sm text-neutral-Silver space-y-2 mt-2">

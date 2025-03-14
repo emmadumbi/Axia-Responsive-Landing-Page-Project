@@ -38,8 +38,8 @@ module.exports = {
         sm: "clamp(0.75rem, 0.679rem + 0.357vw, 1rem)",
       },
       screens: {
-        xl: { max: "71.875em" }, //1150px
-        lg: { max: "56.25em" }, //900px
+        xl: { max: "81.25em" }, //1300px
+        lg: { max: "57.5em" }, //920px
         md: { max: "51.875em" }, //830px
         sm: { max: "43.75em" }, //700px
       },

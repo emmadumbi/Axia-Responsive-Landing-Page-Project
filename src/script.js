@@ -14,7 +14,7 @@ menuBtn.addEventListener("click", () => {
 toggleBtn.addEventListener("click", () => {
   html.classList.toggle("dark");
 
-  // Optional: Store user preference in localStorage
+  //save the prefered user theme in local storage
   if (html.classList.contains("dark")) {
     localStorage.setItem("theme", "dark");
   } else {
@@ -22,7 +22,7 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
-// On load, apply stored theme
+// starts with the saved theme on load
 if (localStorage.getItem("theme") === "dark") {
   html.classList.add("dark");
 }

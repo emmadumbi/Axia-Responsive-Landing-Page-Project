@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="font-inter">
   <head>
     <meta charset="UTF-8" />
@@ -21,11 +21,24 @@
   </head>
   <body>
     <header>
-      <section class="bg-neutral-Silver">
+      <section
+        class="bg-neutral-Silver dark:bg-gray-900 transition-colors duration-300"
+      >
         <article class="mx-auto w-11/12 py-4 flex justify-between items-center">
           <figure>
-            <img src="../images/header_imgs/header-logo.svg" alt="" />
+            <img
+              class="dark:invert"
+              src="../images/header_imgs/header-logo.svg"
+              alt=""
+            />
           </figure>
+
+          <button
+            id="theme-toggle"
+            class="p-1 bg-gray-200 dark:bg-gray-700 rounded"
+          >
+            <img src="icons/sun-moon.svg" alt="" />
+          </button>
 
           <button id="menu-btn" class="hidden lg:block">
             <svg
@@ -64,7 +77,7 @@
           <article class="flex items-center lg:hidden">
             <nav>
               <u
-                class="list-none no-underline flex gap-x-10 justify-center text-neutral-Black xl:gap-6"
+                class="list-none no-underline flex gap-x-10 justify-center text-neutral-Black dark:text-neutral-White xl:gap-6"
               >
                 <li class="p-1 hover:bg-neutral-White hover:text-primary-brand">
                   <a href="">Home</a>
@@ -103,9 +116,9 @@
           <!-- mobile menu -->
           <nav
             id="mobile-menu"
-            class="hidden bg-white p-4 absolute top-16 left-0 w-full shadow-md"
+            class="hidden bg-white dark:bg-gray-900 p-4 absolute top-16 left-0 w-full shadow-md"
           >
-            <ul class="space-y-4 text-gray-700">
+            <ul class="space-y-4 text-gray-700 dark:text-neutral-White">
               <li><a href="#" class="block">Home</a></li>
               <li><a href="#" class="block">Service</a></li>
               <li><a href="#" class="block">Feature</a></li>
@@ -114,7 +127,9 @@
               <li><a href="#" class="block">FAQ</a></li>
             </ul>
             <div class="mt-4 flex flex-col space-y-2">
-              <button class="border border-gray-300 px-4 py-2 rounded-md">
+              <button
+                class="border border-gray-300 px-4 py-2 rounded-md dark:text-neutral-White"
+              >
                 Login
               </button>
               <button class="bg-green-500 text-white px-4 py-2 rounded-md">
@@ -125,18 +140,20 @@
         </article>
       </section>
 
-      <section class="bg-neutral-Silver">
+      <section
+        class="bg-neutral-Silver dark:bg-gray-900 transition-colors duration-300"
+      >
         <article class="mx-auto w-11/12 py-36 flex justify-between md:block">
           <article class="w-6/12 md:w-full md:text-center">
             <h1
-              class="font-semibold text-6xl text-neutral-D_Grey mb-4 leading-[4.75rem] xl:leading-[3rem]"
+              class="font-semibold text-6xl text-neutral-D_Grey mb-4 leading-[4.75rem] dark:text-neutral-White xl:leading-[3rem]"
             >
               Your Money, Your Future.
               <span class="text-primary-brand"
                 >Save Smarter & Get Hired Faster.</span
               >
             </h1>
-            <p class="text-neutral-Grey">
+            <p class="text-neutral-Grey dark:text-neutral-White">
               Take control of your finances with automated savings and discover
               career opportunities that match your skills.
             </p>
@@ -157,9 +174,11 @@
     </header>
 
     <main>
-      <section>
+      <section class="dark:bg-gray-900 transition-colors duration-300">
         <article class="mx-auto w-11/12 pt-44 pb-80">
-          <h2 class="text-4xl text-center font-semibold text-neutral-D_Grey">
+          <h2
+            class="text-4xl text-center font-semibold text-neutral-D_Grey dark:text-neutral-White"
+          >
             Smart Savings & Job Matching
           </h2>
 
@@ -167,43 +186,65 @@
             class="grid grid-cols-3 gap-28 xl:gap-16 mt-20 lg:gap-6 md:grid-cols-2 sm:flex sm:flex-col"
           >
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow sm:w-11/12 sm:mx-auto"
             >
               <figure>
-                <img src="../icons/member-Icon.svg" alt="member-Icon" />
+                <img
+                  class="dark:invert"
+                  src="../icons/member-Icon.svg"
+                  alt="member-Icon"
+                />
               </figure>
-              <p class="font-bold text-3xl text-neutral-D_Grey">
+              <p
+                class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
+              >
                 Automated Savings
               </p>
-              <p class="text-sm leading-5 text-neutral-Grey">
+              <p
+                class="text-sm leading-5 text-neutral-Grey dark:text-action-Warning"
+              >
                 Set goals and watch your money grow with AI-powered savings
                 plans.
               </p>
             </article>
 
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow sm:w-11/12 sm:mx-auto"
             >
               <figure>
-                <img src="../icons/national-Icon.svg" alt="national-Icon" />
+                <img
+                  class="dark:invert"
+                  src="../icons/national-Icon.svg"
+                  alt="national-Icon"
+                />
               </figure>
-              <p class="font-bold text-3xl text-neutral-D_Grey">Job Matching</p>
-              <p class="text-sm leading-5 text-neutral-Grey">
+              <p
+                class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
+              >
+                Job Matching
+              </p>
+              <p
+                class="text-sm leading-5 text-neutral-Grey dark:text-action-Warning"
+              >
                 Get personalized job recommendations based on your skills and
                 interests.
               </p>
             </article>
 
             <article
-              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver shadow-md sm:w-11/12 sm:mx-auto"
+              class="flex flex-col items-center text-center gap-4 p-5 bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow sm:w-11/12 sm:mx-auto"
             >
               <figure>
-                <img src="../icons/club-Icon.svg" alt="" />
+                <img class="dark:invert" src="../icons/club-Icon.svg" alt="" />
               </figure>
-              <p class="font-bold text-3xl text-neutral-D_Grey">
+              <p
+                class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
+              >
                 Instant Withdrawals
               </p>
-              <p class="text-sm leading-5 text-neutral-Grey">
+              <p
+                class="text-sm leading-5 text-neutral-Grey dark:text-action-Warning"
+              >
                 Access your funds anytime, anywhere, with zero hidden fees.
               </p>
             </article>
@@ -211,7 +252,7 @@
         </article>
       </section>
 
-      <section>
+      <section class="dark:bg-gray-900 transition-colors duration-300">
         <article class="mx-auto w-11/12 flex justify-between md:block">
           <figure class="w-5/12 md:w-full md:flex md:justify-center">
             <img
@@ -221,17 +262,19 @@
           </figure>
 
           <article class="w-6/12 py-16 md:w-full md:text-center">
-            <h3 class="font-semibold text-neutral-D_Grey text-4xl mb-10">
+            <h3
+              class="font-semibold text-neutral-D_Grey dark:text-neutral-White text-4xl mb-10"
+            >
               Money & Career Tips You Can’t Miss
             </h3>
             <article>
-              <p class="text-sm text-neutral-Grey mb-2">
+              <p class="text-sm text-neutral-Grey dark:text-neutral-White mb-2">
                 💲 How to Save More in 2025 – Expert Advice
               </p>
-              <p class="text-sm text-neutral-Grey mb-2">
+              <p class="text-sm text-neutral-Grey dark:text-neutral-White mb-2">
                 💲 10 High-Paying Jobs You Can Apply for Today
               </p>
-              <p class="text-sm text-neutral-Grey mb-2">
+              <p class="text-sm text-neutral-Grey dark:text-neutral-White mb-2">
                 💲 Investing vs. Saving – What’s Best for You?
               </p>
             </article>
@@ -245,19 +288,25 @@
         </article>
       </section>
 
-      <section class="bg-neutral-Silver">
+      <section
+        class="bg-neutral-Silver dark:bg-gray-900 transition-colors duration-300"
+      >
         <article class="mx-auto w-11/12 py-16 flex justify-between md:block">
           <article
             class="w-5/12 flex flex-col justify-center md:items-center md:w-full"
           >
-            <h3 class="font-semibold text-4xl mb-3 md:text-center">
+            <h3
+              class="font-semibold text-4xl mb-3 md:text-center dark:text-neutral-White"
+            >
               Helping Businesses Scale with
               <span class="text-action-Error leading-10 md:block md:text-center"
                 >Financial Technology</span
               >
             </h3>
 
-            <p class="text-neutral-Black leading-6 md:text-center">
+            <p
+              class="text-neutral-Black dark:text-neutral-White leading-6 md:text-center"
+            >
               Empowering businesses with seamless payment solutions and
               financial innovation.
             </p>
@@ -273,10 +322,13 @@
                 alt=""
               />
               <p class="flex flex-col md:justify-center">
-                <span class="font-bold text-3xl text-neutral-D_Grey"
+                <span
+                  class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
                   >2,245,241</span
                 >
-                <span class="text-neutral-Grey text-sm">Active Users</span>
+                <span class="text-neutral-Grey dark:text-neutral-White text-sm"
+                  >Active Users</span
+                >
               </p>
             </article>
 
@@ -287,10 +339,14 @@
                 alt=""
               />
               <p class="flex flex-col justify-center">
-                <span class="font-bold text-3xl text-neutral-D_Grey">
+                <span
+                  class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
+                >
                   46,328</span
                 >
-                <span class="text-neutral-Grey text-sm">Business Accounts</span>
+                <span class="text-neutral-Grey dark:text-neutral-White text-sm"
+                  >Business Accounts</span
+                >
               </p>
             </article>
 
@@ -301,10 +357,11 @@
                 alt=""
               />
               <p class="flex flex-col justify-center">
-                <span class="font-bold text-3xl text-neutral-D_Grey"
+                <span
+                  class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
                   >828,867</span
                 >
-                <span class="text-neutral-Grey text-sm"
+                <span class="text-neutral-Grey dark:text-neutral-White text-sm"
                   >Transactions Processed</span
                 >
               </p>
@@ -317,10 +374,11 @@
                 alt=""
               />
               <p class="flex flex-col justify-center">
-                <span class="font-bold text-3xl text-neutral-D_Grey"
+                <span
+                  class="font-bold text-3xl text-neutral-D_Grey dark:text-neutral-White"
                   >1,926,436
                 </span>
-                <span class="text-neutral-Grey text-sm"
+                <span class="text-neutral-Grey text-sm dark:text-neutral-White"
                   >Successful Payments</span
                 >
               </p>
@@ -329,7 +387,7 @@
         </article>
       </section>
 
-      <section>
+      <section class="dark:bg-gray-900 transition-colors duration-300">
         <article
           class="mx-auto w-11/12 flex justify-between py-32 md:flex-col md:text-center"
         >
@@ -339,11 +397,13 @@
 
           <article class="w-6/12 pt-9 md:w-full">
             <h3
-              class="font-semibold text-4xl leading-[2.75rem] mb-5 text-neutral-D_Grey"
+              class="font-semibold text-4xl leading-[2.75rem] mb-5 text-neutral-D_Grey dark:text-primary-brand"
             >
               Optimizing Your Payment Flow for Security & Efficiency
             </h3>
-            <p class="text-sm leading-5 text-neutral-Grey mb-5">
+            <p
+              class="text-sm leading-5 text-neutral-Grey mb-5 dark:text-neutral-White"
+            >
               A smooth, secure, and user-friendly payment experience is the key
               to customer retention. Learn how we built an optimized financial
               ecosystem that prioritizes both security and ease of use.
@@ -357,21 +417,25 @@
         </article>
       </section>
 
-      <section class="bg-neutral-Silver">
+      <section
+        class="bg-neutral-Silver dark:bg-gray-900 transition-colors duration-300"
+      >
         <article class="mx-auto w-11/12 flex gap-7 py-8 md:block">
           <figure class="w-4/12 md:w-full md:flex md:justify-center">
             <img src="../images/main-imgs/tesla_img.png" alt="" />
           </figure>
 
           <article class="w-9/12 md:w-full md:text-center">
-            <p class="font-medium leading-6 text-neutral-Grey mb-4">
+            <p
+              class="font-medium leading-6 text-neutral-Grey mb-4 dark:text-neutral-White"
+            >
               Since adopting this platform, we've streamlined our payment
               processes and improved transaction security. The integration was
               effortless, and the insights we gain help us make better financial
               decisions.
             </p>
             <p class="font-semibold text-xl text-primary-brand">Tim Smith</p>
-            <p class="text-neutral-L_Grey">
+            <p class="text-neutral-L_Grey dark:text-neutral-White">
               Chief Financial Officer, British Dragon Boat Racing Association
             </p>
             <article
@@ -417,14 +481,16 @@
         </article>
       </section>
 
-      <section>
+      <section class="dark:bg-gray-900 transition-colors duration-300">
         <article class="mx-auto w-11/12 py-36">
           <h4
-            class="font-semibold text-4xl text-neutral-D_Grey text-center leading-10"
+            class="font-semibold text-4xl text-neutral-D_Grey text-center leading-10 dark:text-primary-brand"
           >
             Trusted by Businesses, Loved by Users
           </h4>
-          <p class="text-center leading-6 text-neutral-Grey mt-3">
+          <p
+            class="text-center leading-6 text-neutral-Grey mt-3 dark:text-neutral-White"
+          >
             Real stories from customers who transformed their financial
             operations with our platform.
           </p>
@@ -433,14 +499,17 @@
             <article class="mx-auto w-11/12 flex flex-col items-center">
               <img class="" src="../images/main-imgs/image 18.png" alt="" />
               <article
-                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto sm:block sm:mx-0 sm:max-w-80"
+                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow mx-auto sm:block sm:mx-0 sm:max-w-80"
               >
-                <p class="leading-5 text-neutral-Grey mb-3">
+                <p
+                  class="leading-5 text-neutral-Grey mb-3 dark:text-neutral-White"
+                >
                   Managing our business finances used to be a hassle. With this
                   platform, transactions are seamless, and our revenue flow has
                   been better!
                 </p>
-                <span class="font-semibold text-primary-brand"
+                <span
+                  class="font-semibold text-primary-brand dark:text-action-Warning"
                   >Amara O., CEO, SwiftPay</span
                 >
               </article>
@@ -449,14 +518,17 @@
             <article class="mx-auto w-11/12 flex flex-col items-center">
               <img class="" src="../images/main-imgs/image 19.png" alt="" />
               <article
-                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto sm:block sm:mx-0 sm:max-w-80"
+                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow mx-auto sm:block sm:mx-0 sm:max-w-80"
               >
-                <p class="leading-5 text-neutral-Grey mb-3">
+                <p
+                  class="leading-5 text-neutral-Grey mb-3 dark:text-neutral-White"
+                >
                   The security and ease of payments have improved our customer
                   experience. We now process payments 2x faster with zero failed
                   transactions!
                 </p>
-                <span class="font-semibold text-primary-brand"
+                <span
+                  class="font-semibold text-primary-brand dark:text-action-Warning"
                   >Tunde A., Founder, FinTrust</span
                 >
               </article>
@@ -464,14 +536,17 @@
             <article class="mx-auto w-11/12 flex flex-col items-center">
               <img class="" src="../images/main-imgs/image 20.png" alt="" />
               <article
-                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver shadow-md mx-auto sm:block sm:mx-0 sm:max-w-80"
+                class="w-10/12 flex flex-col text-center relative -top-16 gap-2 p-3 rounded-lg bg-neutral-Silver dark:bg-gray-600 shadow-md dark:shadow-darkModeShadow mx-auto sm:block sm:mx-0 sm:max-w-80"
               >
-                <p class="leading-5 text-neutral-Grey mb-3">
+                <p
+                  class="leading-5 text-neutral-Grey mb-3 dark:text-neutral-White"
+                >
                   This solution helped us scale without worrying about
                   transaction bottlenecks. The automation tools have saved us
                   hours of work weekly!
                 </p>
-                <span class="font-semibold text-primary-brand"
+                <span
+                  class="font-semibold text-primary-brand dark:text-action-Warning"
                   >Lisa K., CFO, PayFlex</span
                 >
               </article>
@@ -481,10 +556,12 @@
       </section>
     </main>
     <footer>
-      <section class="bg-neutral-Silver">
-        <article class="mt-36 py-24 mx-auto w-11/12 flex flex-col items-center">
+      <section
+        class="bg-neutral-Silver dark:bg-gray-900 transition-colors duration-300"
+      >
+        <article class="py-24 mx-auto w-11/12 flex flex-col items-center">
           <h6
-            class="font-semibold text-4xl leading-[4.75rem] text-center sm:leading-10"
+            class="font-semibold text-4xl leading-[4.75rem] text-center sm:leading-10 dark:text-primary-brand"
           >
             Ready to Take Control of Your Money?
           </h6>
@@ -496,7 +573,9 @@
         </article>
       </section>
 
-      <section class="bg-neutral-Black">
+      <section
+        class="bg-neutral-Black dark:bg-gray-900 transition-colors duration-300"
+      >
         <article class="mx-auto w-11/12 py-16 flex justify-between sm:block">
           <article class="space-y-8">
             <figure>
@@ -527,9 +606,9 @@
           </article>
 
           <article
-            class="grid grid-cols-3 gap-5 xl:grid-cols-2 lg:flex lg:flex-col lg:gap-5 sm:block sm:space-y-6 sm:mt-10"
+            class="w-8/12 grid grid-cols-[200px_200px_1fr] gap-5 xl:grid-cols-2 sm:w-full sm:flex sm:flex-col sm:space-y-6 sm:mt-10"
           >
-            <article class="">
+            <article>
               <p class="font-semibold text-neutral-White text-xl">Company</p>
               <ul class="text-sm text-neutral-Silver space-y-2 mt-2">
                 <li class="hover:bg-neutral-White hover:text-neutral-Black">
@@ -547,7 +626,7 @@
               </ul>
             </article>
 
-            <article class="">
+            <article>
               <p class="font-semibold text-neutral-White text-xl">Support</p>
               <ul class="text-sm text-neutral-Silver space-y-2 mt-2">
                 <li class="hover:bg-neutral-White hover:text-neutral-Black">
@@ -565,18 +644,18 @@
               </ul>
             </article>
 
-            <article>
+            <article
+              class="justify-self-end xl:justify-self-start xl:col-start-1 xl:col-end-3"
+            >
               <p class="font-semibold text-neutral-White text-xl mb-2">
                 Stay up to date
               </p>
               <form action="/">
-                <article
-                  class="flex items-center rounded-md overflow-hidden max-w-max"
-                >
+                <article class="flex items-center rounded-md">
                   <input
                     type="email"
                     placeholder="Your email address..."
-                    class="flex-1 p-3 sm:p-2 border border-slate-700 outline-none text-neutral-White bg-slate-700 placeholder:text-gray-400 placeholder:text-sm"
+                    class="flex-1 p-3 sm:p-2 w-8/12 border border-slate-700 outline-none text-neutral-White bg-slate-700 placeholder:text-gray-400 placeholder:text-sm"
                   />
                   <button
                     type="submit"
